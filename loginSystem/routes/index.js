@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/', function (req, res) {
     res.render('index', { title: 'Express' });
     var mysql = require('mysql');
-
+    var mydata = "";
     var con = mysql.createConnection({
         host: "localhost",
         user: "root",
