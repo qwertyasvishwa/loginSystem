@@ -22,7 +22,7 @@ router.get('/', function (req, res) {
                 // console.log(element.email);
                 mydata = element.email;
                 if (i == results.length - 1) {
-                    res.render('index', { title: 'Routes Home', var1: c, mydata: mydata });
+                    res.render('index', { title: 'Routes Home', mydata: mydata });
                 }
             });
 
