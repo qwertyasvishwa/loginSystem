@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('select', function (req, res) {
+router.get('/select', function (req, res) {
 
     var mysql = require('mysql');
     var mydata = "";
