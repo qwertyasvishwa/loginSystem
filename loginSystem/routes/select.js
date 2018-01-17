@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res) {
-
+    console.log('select route');
     var mysql = require('mysql');
     var mydata = "";
     var con = mysql.createConnection({
