@@ -689,6 +689,9 @@
     <Compile Include="node_modules\yargs\lib\validation.js" />
     <Compile Include="public\javascripts\bootstrap.js" />
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\select.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\users.js" />
     <Content Include="node_modules\.bin\acorn" />
     <Content Include="node_modules\.bin\acorn.cmd" />
@@ -2448,6 +2451,9 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="views\select.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
   </ItemGroup>
