@@ -4,9 +4,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    console.log('select route') 
+    console.log('select route');
     var mysql = require('mysql');
-    var mydata = "";
+    var mydata = [""];
     var con = mysql.createConnection({
         host: "localhost",
         user: "root",
@@ -20,7 +20,8 @@ router.get('/', function (req, res) {
             if (err) throw err;
             results.forEach((element, i) => {
                 // console.log(element.email);
-                mydata = element.email;
+                mydata[i] = element.email;
+                console.log(element.email);
                 if (i == results.length - 1) {
                     res.render('select', { title: 'Select Code', mydata: mydata });
                 }
